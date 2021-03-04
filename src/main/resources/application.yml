@@ -1,0 +1,16 @@
+server:
+  context-path: /
+  port: 80
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    initial-size: 10
+    max-active: 20
+    max-idle: 8
+    min-idle: 8
+    url: jdbc:mysql://localhost:3306/web
+    username: root
+    password: 123456
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
